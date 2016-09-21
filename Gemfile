@@ -1,8 +1,5 @@
 source 'https://rubygems.org'
 
-# Define ruby version
-ruby '2.2.4'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0'
 
@@ -32,8 +29,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  gem 'sqlite3', '1.3.11'
-  gem 'byebug',  '9.0.0', platform: :mri
+  gem 'sqlite3'
+  gem 'byebug',  platform: :mri
 end
 
 
@@ -47,7 +44,7 @@ group :development do
 end
 
 group :production do
-  gem 'pg', '0.18.4'
+  gem 'pg'
 end
 
 
